@@ -1,19 +1,30 @@
-/* .monolithLogo {
-    size: 200px;
-} */
+/* The "gold" color is #8f7c01 */
+
 body {
     margin: -1;
-    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
+
+h1 {
+    font-family: 'Six Caps', 'Alegreya Sans SC', sans-serif;
+}
+
 
 header {
     background-color: gray;
     display: grid;
-    
 }
 
+/* header h1 {
+    color: #8f7c01;
+} */
+
 footer {
-    background-color: gold;
+    background-color: #8f7c01;
+    padding: 1em 0.5em 0.5em 0.5em;
 }
 
 
