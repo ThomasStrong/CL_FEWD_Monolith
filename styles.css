@@ -41,8 +41,21 @@ header {
 
     grid-area: header;
     /* padding: 0 1em 1em; */
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* .header-nav {
+    padding: 1em;
+} This was adding a lot of space between nav and title*/
+
 
 header img {
     margin: 0 auto;
@@ -52,29 +65,60 @@ header img {
     text-decoration: none;
 }
 
-li a:hover {
+a:hover {
     color: #8f7c01;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 main {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
 
 li a {
     color: black;
 }
 
-.img-gallery {
-
+#image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
 }
+
+#image-gallery img {
+    width: 90%;
+    height: auto;
+}
+
+
+#testimonials,
+#products {
+    margin: 0 1em 2em 1em;
+}
+
 
 footer {
     background-color: #8f7c01;
     grid-area: footer;
-    padding: 1em 0.5em 0.5em 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
+footer section {
+    margin: 0 1em 0 1em;
+}
 
-
+#footer-logo {
+    /* Need to try and get this to the right side of the screen, with info to left */
+    margin: 0 auto;
+}
 /* @media only screen  */
