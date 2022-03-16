@@ -35,17 +35,19 @@
       <h1 class="main-title">Monolith Lapidary</h1>
       <nav id="header-nav">
         <ul class="header-nav">
-          <li><a class="header-links" href="#main">Home</a></li>
-          <li><a class="header-links" href="#about">About</a></li>
-          <li><a class="header-links" href="#contact">Contact</a></li>
-          <li><a class="header-links" href="#order">Order</a></li>
+            <li><a class="header-links" href="#main" onclick="goHome()">Home</a></li>
+            <li><a class="header-links" href="#about" onclick="goAbout()">Our Story</a></li>
+            <li><a class="header-links" href="#gallery" onclick="goGallery()">Gallery</a></li>
+            <li><a class="header-links" href="#products" onclick="goProducts()">Products & Services</a></li>
+            <li><a class="header-links" href="#testimonials" onclick="goTestimonials()">Testimonials</a></li>
+            <li><a class="header-links" href="#contact" onclick="goContact()">Contact</a></li>  
         </ul>
       </nav>
     </header>
 
     <main>
       <div id="hero-story">
-        <img src="img\lapidarymain.jpg" width="300px" />
+        <img src="img\lapidarymain.jpg" id="hero-image"width="300px" />
         <h2 class="hero-heading">Monolith Lapidary - Our Story</h2>
         <p class="hero-text">
           This is filler text that will be a quick snippet about the company and
@@ -175,10 +177,12 @@
         <h3 class="links-head">Links</h3>
         <!-- These will link to the "pages"  -->
         <ul class="footer-nav">
-          <li><a class="header-links" href="#main">Home</a></li>
-          <li><a class="header-links" href="#about">About</a></li>
-          <li><a class="header-links" href="#contact">Contact</a></li>
-          <li><a class="header-links" href="#order">Order</a></li>
+            <li><a class="header-links" href="#main" onclick="goHome()">Home</a></li>
+            <li><a class="header-links" href="#about" onclick="goAbout()">Our Story</a></li>
+            <li><a class="header-links" href="#gallery" onclick="goGallery()">Gallery</a></li>
+            <li><a class="header-links" href="#products" onclick="goProducts()">Products & Services</a></li>
+            <li><a class="header-links" href="#testimonials" onclick="goTestimonials()">Testimonials</a></li>
+            <li><a class="header-links" href="#contact" onclick="goContact()">Contact</a></li>  
         </ul>
       </section>
       <section id="logo-copy-outro">

@@ -147,6 +147,7 @@ footer section {
 @media only screen and (min-width: 768px) {
   #image-bank img {
     width: 30%;
+    max-width: 200px;
   }
 
   form {
