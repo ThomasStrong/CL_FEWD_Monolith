@@ -114,6 +114,10 @@ li a {
   margin: 0 1em 2em 1em;
 }
 
+form {
+  margin: 2em 0;
+}
+
 form label {
   margin: 1em 0 1em 0.5em;
 }

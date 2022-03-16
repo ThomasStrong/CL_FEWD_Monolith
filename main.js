@@ -30,13 +30,19 @@ function onSubmit() {
   alert("Oy!  That feature is coming soon.  Stay tuned!");
 }
 
-// function goHome() {
-//   let mainSelector = document.getElementById("hiding");
-//   mainSelector.style.display = "none";
-//   console.log("Hiding is hidden");
-// }
+function goHome() {
+  gallerySelector.style.display = "flex";
+  aboutSelector.style.display = "flex";
+  thumbnailSelector.style.display = "flex";
+  prodSelector.style.display = "block";
+  testimonySelector.style.display = "block";
+  contactSelector.style.display = "flex";
+  heroSelector.style.display = "block";
+  console.log("Only `about` is showing");
+}
 
 function goAbout() {
+  goHome();
   gallerySelector.style.display = "none";
   thumbnailSelector.style.display = "none";
   prodSelector.style.display = "none";
@@ -47,6 +53,7 @@ function goAbout() {
 }
 
 function goGallery() {
+  goHome();
   aboutSelector.style.display = "none";
   prodSelector.style.display = "none";
   testimonySelector.style.display = "none";
@@ -56,6 +63,7 @@ function goGallery() {
 }
 
 function goProducts() {
+  goHome();
   gallerySelector.style.display = "none";
   thumbnailSelector.style.display = "none";
   aboutSelector.style.display = "none";
@@ -65,6 +73,7 @@ function goProducts() {
   console.log("Only `product` is showing");
 }
 function goTestimonials() {
+  goHome();
   gallerySelector.style.display = "none";
   thumbnailSelector.style.display = "none";
   prodSelector.style.display = "none";
@@ -75,6 +84,7 @@ function goTestimonials() {
 }
 
 function goContact() {
+  goHome();
   gallerySelector.style.display = "none";
   thumbnailSelector.style.display = "none";
   prodSelector.style.display = "none";
