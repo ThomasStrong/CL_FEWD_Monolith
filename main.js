@@ -45,3 +45,41 @@ function goAbout() {
   heroSelector.style.display = "none";
   console.log("Only `about` is showing");
 }
+
+function goGallery() {
+  aboutSelector.style.display = "none";
+  prodSelector.style.display = "none";
+  testimonySelector.style.display = "none";
+  contactSelector.style.display = "none";
+  heroSelector.style.display = "none";
+  console.log("Only `gallery` is showing");
+}
+
+function goProducts() {
+  gallerySelector.style.display = "none";
+  thumbnailSelector.style.display = "none";
+  aboutSelector.style.display = "none";
+  testimonySelector.style.display = "none";
+  contactSelector.style.display = "none";
+  heroSelector.style.display = "none";
+  console.log("Only `product` is showing");
+}
+function goTestimonials() {
+  gallerySelector.style.display = "none";
+  thumbnailSelector.style.display = "none";
+  prodSelector.style.display = "none";
+  aboutSelector.style.display = "none";
+  contactSelector.style.display = "none";
+  heroSelector.style.display = "none";
+  console.log("Only `testimonials` is showing");
+}
+
+function goContact() {
+  gallerySelector.style.display = "none";
+  thumbnailSelector.style.display = "none";
+  prodSelector.style.display = "none";
+  testimonySelector.style.display = "none";
+  aboutSelector.style.display = "none";
+  heroSelector.style.display = "none";
+  console.log("Only `contact` is showing");
+}
