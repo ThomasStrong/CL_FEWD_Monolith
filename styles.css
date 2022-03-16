@@ -98,6 +98,14 @@ li a {
     margin: 0 1em 2em 1em;
 }
 
+form label {
+    margin: 1em 0 1em .5em;
+}
+form input,
+form textarea { 
+    margin: .5em 1em 1em .5em;
+}
+
 
 footer {
     background-color: #8f7c01;

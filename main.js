@@ -1,2 +1,2 @@
-alert('Hello World!')
+// alert('Hello World!')
 // Woohoo made my first line of script
