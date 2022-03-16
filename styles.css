@@ -56,6 +56,7 @@ header img {
 
 .header-links {
     text-decoration: none;
+    padding: .5em;
 }
 
 a:hover {
@@ -92,6 +93,17 @@ li a {
     height: auto;
 }
 
+#image-bank {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+#image-bank img {
+    padding: .25em;
+    height: auto;
+}
 
 #testimonials,
 #products {
@@ -106,6 +118,11 @@ form textarea {
     margin: .5em 1em 1em .5em;
 }
 
+form button {
+    height: min-content;
+    padding: 1em;
+    align-self: center;
+}
 
 footer {
     background-color: #8f7c01;
@@ -122,4 +139,32 @@ footer section {
     /* Need to try and get this to the right side of the screen, with info to left */
     margin: 0 auto;
 }
-/* @media only screen  */
+@media only screen and (min-width: 768px) {
+    #image-bank img {
+        width: 30%;
+    }
+
+    form {
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    main {
+        margin: 0 auto;
+        width: 65%;
+    }
+}
+
+.image-loop {
+    display: none;
+}
