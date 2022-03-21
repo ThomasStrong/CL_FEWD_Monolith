@@ -27,7 +27,7 @@ function carousel() {
 carousel();
 
 function onSubmit() {
-  alert("Oy!  That feature is coming soon.  Stay tuned!");
+  alert("Oi!  That feature is coming soon.  Stay tuned!");
 }
 
 function goHome() {
