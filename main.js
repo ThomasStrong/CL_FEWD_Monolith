@@ -38,7 +38,7 @@ function goHome() {
   testimonySelector.style.display = "block";
   contactSelector.style.display = "flex";
   heroSelector.style.display = "block";
-  console.log("Only `about` is showing");
+  // console.log("Only `about` is showing");
 }
 
 function goAbout() {
@@ -49,7 +49,7 @@ function goAbout() {
   testimonySelector.style.display = "none";
   contactSelector.style.display = "none";
   heroSelector.style.display = "none";
-  console.log("Only `about` is showing");
+  // console.log("Only `about` is showing");
 }
 
 function goGallery() {
@@ -59,7 +59,7 @@ function goGallery() {
   testimonySelector.style.display = "none";
   contactSelector.style.display = "none";
   heroSelector.style.display = "none";
-  console.log("Only `gallery` is showing");
+  // console.log("Only `gallery` is showing");
 }
 
 function goProducts() {
@@ -70,7 +70,7 @@ function goProducts() {
   testimonySelector.style.display = "none";
   contactSelector.style.display = "none";
   heroSelector.style.display = "none";
-  console.log("Only `product` is showing");
+  // console.log("Only `product` is showing");
 }
 function goTestimonials() {
   goHome();
@@ -80,7 +80,7 @@ function goTestimonials() {
   aboutSelector.style.display = "none";
   contactSelector.style.display = "none";
   heroSelector.style.display = "none";
-  console.log("Only `testimonials` is showing");
+  // console.log("Only `testimonials` is showing");
 }
 
 function goContact() {
@@ -91,5 +91,5 @@ function goContact() {
   testimonySelector.style.display = "none";
   aboutSelector.style.display = "none";
   heroSelector.style.display = "none";
-  console.log("Only `contact` is showing");
+  // console.log("Only `contact` is showing");
 }
