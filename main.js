@@ -1,9 +1,8 @@
-// alert('Hello World!')
-// Woohoo made my first line of script
-
+// Carousel variables
 let myIndex = 0;
 let x = document.getElementsByClassName("image-loop");
 
+//Variables for hiding/showing pages
 let aboutSelector = document.getElementById("hero-story");
 let gallerySelector = document.getElementById("image-gallery");
 let thumbnailSelector = document.getElementById("image-bank");
@@ -28,6 +27,20 @@ carousel();
 
 function onSubmit() {
   alert("Oi!  That feature is coming soon.  Stay tuned!");
+}
+
+function hamburgerNav() {
+  var x = document.getElementById("header-nav");
+  var y = document.getElementById("nav-icon");
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    // y.style.alignSelf = "center";
+  } else {
+    x.style.display = "block";
+    // y.style.alignSelf = "flex-start";
+    x.style.order = "1";
+  }
 }
 
 function goHome() {

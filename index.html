@@ -67,7 +67,11 @@
             >
           </li>
         </ul>
+
       </nav>
+      <button id="nav-icon" onclick="hamburgerNav()">
+        &#9776
+      </a>
     </header>
 
     <main>
@@ -165,15 +169,15 @@
       <form id="contact-form">
         <div>
           <label for="first-name">First Name</label><br />
-          <input type="text" id="first-name" name="first-name" /><br />
+          <input type="text" id="first-name" name="first-name" required /><br />
         </div>
         <div>
           <label for="last-name">Last Name</label><br />
-          <input type="text" id="last-name" name="last-name" /><br />
+          <input type="text" id="last-name" name="last-name" required /><br />
         </div>
         <div>
           <label for="email">Email</label><br />
-          <input type="email" id="email" name="email" /><br />
+          <input type="email" id="email" name="email" required /><br />
         </div>
         <div>
           <label for="contact-message">Comments</label><br />
@@ -203,33 +207,33 @@
         <!-- These will link to the "pages"  -->
         <ul class="footer-nav">
           <li>
-            <a class="header-links" href="#main" onclick="goHome()">Home</a>
+            <a class="footer-links" href="#main" onclick="goHome()">Home</a>
           </li>
           <li>
-            <a class="header-links" href="#about" onclick="goAbout()"
+            <a class="footer-links" href="#about" onclick="goAbout()"
               >Our Story</a
             >
           </li>
           <li>
-            <a class="header-links" href="#gallery" onclick="goGallery()"
+            <a class="footer-links" href="#gallery" onclick="goGallery()"
               >Gallery</a
             >
           </li>
           <li>
-            <a class="header-links" href="#products" onclick="goProducts()"
+            <a class="footer-links" href="#products" onclick="goProducts()"
               >Products & Services</a
             >
           </li>
           <li>
             <a
-              class="header-links"
+              class="footer-links"
               href="#testimonials"
               onclick="goTestimonials()"
               >Testimonials</a
             >
           </li>
           <li>
-            <a class="header-links" href="#contact" onclick="goContact()"
+            <a class="footer-links" href="#contact" onclick="goContact()"
               >Contact</a
             >
           </li>
