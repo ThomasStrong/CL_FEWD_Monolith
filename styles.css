@@ -125,9 +125,10 @@ li a {
 }
 
 form {
-  margin: 2em 0 2em 1em;
+  margin: 2em 5em 2em 1em;
   display: flex;
   flex-direction: column;
+  background-color: #8f7c01;
 }
 
 form label {
@@ -142,7 +143,7 @@ form button {
   height: min-content;
   padding: 1em;
   align-self: center;
-  margin: 0 auto 1em 1em;
+  margin: 0 1em 1em 1em;
 }
 
 footer {
@@ -169,13 +170,14 @@ footer section {
   form {
     width: 90%;
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
-    justify-content: center center;
-    /* align-content: center; */
-    background-color: #8f7c01;
     border: 0 none;
     border-radius: 10px;
     padding: 1em 1em 1em 1em;
+  }
+
+  #contact-form {
   }
 
   #hero-story img,
@@ -226,7 +228,7 @@ footer section {
   }
 
   form {
-    background-color: #8f7c01;
+    /* background-color: #8f7c01; */
     border: 0 none;
     border-radius: 10px;
     padding: 1em 1em 1em 1em;
