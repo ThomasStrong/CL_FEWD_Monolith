@@ -68,6 +68,10 @@ header img {
   align-self: center;
 }
 
+#products {
+  background-image: url("img\sectionbackgroundmonolith.png");
+}
+
 a:hover {
   color: #8f7c01;
   background-color: rgba(0, 0, 0, 0.7);
