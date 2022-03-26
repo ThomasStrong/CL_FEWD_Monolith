@@ -38,7 +38,7 @@ function goHome() {
   testimonySelector.style.display = "block";
   contactSelector.style.display = "flex";
   heroSelector.style.display = "block";
-  // console.log("Only `about` is showing");
+  // console.log("Only `home` is showing");
 }
 
 function goAbout() {

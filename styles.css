@@ -62,7 +62,9 @@ header img {
 
 a:hover {
   color: #8f7c01;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0.1px black;
+  border-radius: 50%;
 }
 
 main {
@@ -113,10 +115,19 @@ li a {
 #testimonials,
 #products {
   margin: 0 1em 2em 1em;
+  padding: 0.5em 0 1em 1em;
+}
+
+.testimonials-list li,
+.products-services li {
+  border: 1px black;
+  padding: 0.5em 0 1em;
 }
 
 form {
-  margin: 2em 0;
+  margin: 2em 0 2em 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
@@ -124,14 +135,14 @@ form label {
 }
 form input,
 form textarea {
-  margin: 0.5em 1em 1em 0.5em;
+  margin: 0.5em 1em 1em 1em;
 }
 
 form button {
   height: min-content;
   padding: 1em;
   align-self: center;
-  margin-bottom: 1em;
+  margin: 0 auto 1em 1em;
 }
 
 footer {
@@ -148,6 +159,7 @@ footer section {
 #footer-logo {
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 768px) {
   #image-bank img {
     width: 30%;
@@ -158,7 +170,12 @@ footer section {
     width: 90%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center center;
+    /* align-content: center; */
+    background-color: #8f7c01;
+    border: 0 none;
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
   }
 
   #hero-story img,
@@ -181,6 +198,7 @@ footer section {
   main {
     margin: 0 auto;
     width: 65%;
+    font-size: 150%;
   }
 
   header {
@@ -205,6 +223,13 @@ footer section {
 
   header img {
     margin: 0;
+  }
+
+  form {
+    background-color: #8f7c01;
+    border: 0 none;
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
   }
 }
 
