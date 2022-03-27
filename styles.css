@@ -139,7 +139,7 @@ li a {
 #testimonials,
 #products,
 #our-story {
-  margin: 0 1em 2em 0;
+  margin: 2em 1em 2em 0;
   padding: 0.5em 0 1em 1em;
 }
 
@@ -160,11 +160,11 @@ form {
   font-weight: 600;
   background-image: url("img/thinsectionbackground.jpg");
   color: white;
-  text-shadow: 2px 2px 4px black, 2px -2px 4px black, -2px -2px 4px black, -2px 2px 4px black;
+  text-shadow: 2px 2px 4px black, 2px -2px 4px black, -2px -2px 4px black,
+    -2px 2px 4px black;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
-  -10px 10px 20px rgba(0, 0, 0, 0.5),
-  -10px -10px 20px rgba(0, 0, 0, 0.5),
-  10px -10px 20px rgba(0, 0, 0, 0.5);
+    -10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(0, 0, 0, 0.5),
+    10px -10px 20px rgba(0, 0, 0, 0.5);
 }
 
 form label {
@@ -222,7 +222,6 @@ footer section {
     justify-content: center;
     flex-flow: row wrap;
     padding: 1em 1em 1em 1em;
-
   }
 
   #hero-story img,
@@ -240,6 +239,7 @@ footer section {
     justify-content: center;
   }
 }
+
 /* Doing a bit of experimenting/styling with the header here */
 
 .main-title {
@@ -255,6 +255,8 @@ footer section {
 #landing-title {
   display: flex;
 }
+
+/* Media Queries Below */
 
 @media only screen and (min-width: 1025px) {
   main {
