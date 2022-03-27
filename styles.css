@@ -89,7 +89,7 @@ header img {
 #products,
 #testimonials,
 #our-story {
-  background-image: url("img\\sectionbackgroundmonolith.png");
+  background-image: url("img\\sectionbackgroundmonolith.webp");
   background-size: cover;
   border-radius: 10px;
 }
