@@ -280,6 +280,8 @@ footer section {
   }
 }
 
+/* This animation will be hinted at as a secret instruction and will make a "cabochon" out of the link background, polishing as it goes */
+
 @keyframes linkHoverCab {
   0% {
     background-color: rgba(0, 0, 0, 1);
@@ -329,6 +331,7 @@ footer section {
       -0.5px 0.5px rgba(255, 255, 255, 1);
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .header-links {
     transition: color 3s, border-radius 1.5s;
@@ -407,10 +410,6 @@ footer section {
     border: 0 none;
     border-radius: 10px;
     padding: 1em 1em 1em 1em;
-  }
-
-  a {
-    transition: none;
   }
 
   a:hover {

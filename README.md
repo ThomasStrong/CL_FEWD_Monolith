@@ -9,9 +9,11 @@ Description -
 
 CSS Features -
 
-- 2 media queries have been utilized at 768px and 1025 px to provide responsiveness to the site on mobile devices (primarily), tablets, and desktop computers respectively.
+- 2 media queries have been utilized at (min) 768px and (min) 1025 px to provide responsiveness to the site on mobile devices (primarily), tablets, and desktop computers respectively.
+  + A third media query was utilized at (max) 1024 px to undo and set transitions in place of the animtion linkHoverCab.
 - The navigation menu is a humburger menu in mobile view, single row in tablet views, and switches to a column at the highest size.
   + Hamburger menu display properties driven by the function hamburgerNav() which toggles the nav links to display/hide on button clicks.
+- A CSS animation linkHoverCab plays on hover over desktop-view header navigation links.  In mobile and tablet views CSS transitions were used to mimic the animation on smaller screens.
 - The site has a simple grid layout with nested flexbox content.
 - A Web Accessibility Compliance Review was undertaken using Chrome Developer Tools' Lighthouse. A .pdf of the original review can be found in the repository under the filename lighthousereport1.pdf. Consequent reports were generated after following suggestions given by the Lighthouse review.
 
