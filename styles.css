@@ -112,6 +112,13 @@ main {
   padding: 1em;
 }
 
+#tag-line {
+  font-family: "Six Caps", "Alegreya Sans SC", sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  margin-top: 0.5em;
+}
+
 #hero-story img {
   width: 70%;
   border-radius: 10px;
