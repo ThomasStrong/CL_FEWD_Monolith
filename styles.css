@@ -89,7 +89,7 @@ header img {
 #products,
 #testimonials,
 #our-story {
-  background-image: url("img/sectionbackgroundmonolith.png");
+  background-image: url("img\\sectionbackgroundmonolith.png");
   background-size: cover;
   border-radius: 10px;
 }
@@ -172,7 +172,7 @@ form {
   border: 0 none;
   border-radius: 10px;
   font-weight: 600;
-  background-image: url("img/thinsectionbackground.jpg");
+  background-image: url("img\\thinsectionbackground.jpg");
   color: white;
   text-shadow: 2px 2px 4px black, 2px -2px 4px black, -2px -2px 4px black,
     -2px 2px 4px black;
@@ -296,6 +296,7 @@ footer > p {
 @keyframes linkHoverCab {
   0% {
     background-color: rgba(0, 0, 0, 1);
+    color: rgba(199, 199, 199, 0.8);
   }
   10% {
     border-radius: 10%;
@@ -431,6 +432,7 @@ footer > p {
     font-weight: 600;
     animation-name: linkHoverCab;
     animation-duration: 10s;
+    animat
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier();
   }
