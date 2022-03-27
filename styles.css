@@ -49,6 +49,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 2px 2px gray;
 }
 
 #header-nav {
@@ -64,6 +65,7 @@ header img {
 .footer-links {
   text-decoration: none;
   padding: 0.5em;
+  color: black;
   /* padding: 2em 2em 0 3em ; */
 }
 
@@ -113,12 +115,8 @@ main {
 }
 
 #hero-story img {
-  width: 60%;
+  width: 70%;
   border-radius: 10px;
-}
-
-li a {
-  color: black;
 }
 
 #image-gallery {
@@ -143,6 +141,7 @@ li a {
 #image-bank img {
   padding: 0.25em;
   height: auto;
+  border-radius: 15px;
 }
 
 #testimonials,
@@ -179,6 +178,7 @@ form {
 form label {
   margin: 1em 0 1em 0.5em;
 }
+
 form input,
 form textarea {
   margin: 0.5em 1em 1em 1em;
@@ -207,7 +207,11 @@ footer section {
   margin: 0 auto;
 }
 
-#secret-instr
+.image-loop {
+  display: none;
+  border-radius: 10px;
+}
+
 
 /* Doing a bit of experimenting/styling with the header here */
 
@@ -232,6 +236,10 @@ footer section {
     margin: 0 auto;
     width: 90%;
     font-size: 125%;
+  }
+
+  #hero-story img {
+    width: 90%;
   }
 
   #image-bank img {
@@ -342,6 +350,11 @@ footer section {
     width: 65%;
     font-size: 150%;
   }
+
+  #hero-story img {
+    width: 70%;
+  }
+
   h1 {
     font-size: 80px;
   }
@@ -394,8 +407,4 @@ footer section {
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier();
   }
-}
-
-.image-loop {
-  display: none;
 }
