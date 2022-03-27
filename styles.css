@@ -110,6 +110,8 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 98%;
 }
 
 #hero-story {
@@ -235,6 +237,12 @@ footer section {
 /* Media Queries Below */
 
 @media only screen and (min-width: 768px) {
+  main {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 125%;
+  }
+
   #image-bank img {
     width: 30%;
     max-width: 200px;
