@@ -122,6 +122,7 @@ main {
 
 #hero-story img {
   width: 70%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -142,6 +143,12 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1em;
+}
+#image-bank div {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #image-bank img {
