@@ -204,7 +204,9 @@ footer section {
 #footer-logo {
   margin: 0 auto;
 }
-
+ footer>p {
+   align-self: center;
+ }
 .image-loop {
   display: none;
   border-radius: 10px;
@@ -318,17 +320,17 @@ footer section {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
     color: rgba(143, 124, 1, 1);
-    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 1),
-      0.5px -0.5px rgba(255, 255, 255, 1), -0.5px -0.5px rgba(255, 255, 255, 1),
-      -0.5px 0.5px rgba(255, 255, 255, 1);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, .8),
+      0.5px -0.5px rgba(255, 255, 255, .8), -0.5px -0.5px rgba(255, 255, 255, .8),
+      -0.5px 0.5px rgba(255, 255, 255, .8);
   }
   100% {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
     color: rgba(143, 124, 1, 1);
-    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 1),
-      0.5px -0.5px rgba(255, 255, 255, 1), -0.5px -0.5px rgba(255, 255, 255, 1),
-      -0.5px 0.5px rgba(255, 255, 255, 1);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, .9),
+      0.5px -0.5px rgba(255, 255, 255, .9), -0.5px -0.5px rgba(255, 255, 255, .9),
+      -0.5px 0.5px rgba(255, 255, 255, .9);
   }
 }
 
