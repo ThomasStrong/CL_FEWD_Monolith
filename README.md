@@ -15,7 +15,7 @@ CSS Features -
   + Hamburger menu display properties driven by the function hamburgerNav() which toggles the nav links to display/hide on button clicks.
 - A CSS animation linkHoverCab plays on hover over desktop-view header navigation links.  In mobile and tablet views CSS transitions were used to mimic the animation on smaller screens.
 - The site has a simple grid layout with nested flexbox content.
-- A Web Accessibility Compliance Review was undertaken using Chrome Developer Tools' Lighthouse. A .pdf of the original review can be found in the repository under the filename lighthousereport1.pdf. Consequent reports were generated after following suggestions given by the Lighthouse review.
+- A Web Accessibility Compliance Review was undertaken using Chrome Developer Tools' Lighthouse. A .pdf of the original review can be found in the repository under the filename lighthousereport1.pdf. Consequent reports were generated after following suggestions given by the Lighthouse review.  The final Lighthouse report is labeled lighthousereport2.pdf and shows greater accessibility as well as other metrics.
 
 JavaScript Features -
 
