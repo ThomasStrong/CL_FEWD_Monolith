@@ -53,6 +53,7 @@ header {
 
 #header-nav {
   display: none;
+  padding-left: 3em;
 }
 
 header img {
@@ -63,14 +64,18 @@ header img {
 .footer-links {
   text-decoration: none;
   padding: 0.5em;
+  /* padding: 2em 2em 0 3em ; */
 }
 
 #secret-instructions {
   font-size: 70%;
-  padding-left: 3em;
+  padding-left: 6em;
   display: none;
 }
-
+#no-hover-secret {
+  font-size: 70%;
+  padding-left: 6em;
+}
 #nav-icon {
   background: #8f7c01;
   color: black;
@@ -85,14 +90,13 @@ header img {
   background-size: cover;
 }
 
-a {
+.header-links {
   transition: color 3s, border-radius 1.5s;
 }
 
-a:hover {
+a.header-links:hover {
   color: rgba(143, 124, 1, 1);
   background-color: rgba(0, 0, 0, 0.7);
-  /* border: 0.1px black; */
   border-radius: 50%;
   font-weight: 600;
 }
@@ -115,7 +119,7 @@ main {
 }
 
 #hero-story img {
-  width: 100%;
+  width: 60%;
 }
 
 li a {
@@ -206,44 +210,6 @@ footer section {
 
 #footer-logo {
   margin: 0 auto;
-}
-
-@keyframes linkHoverCab {
-  0% {
-    background-color: rgba(0, 0, 0, 1);
-  }
-  20% {
-    border-radius: 10%;
-    background-color: rgba(0, 0, 0, 0.95);
-    color: rgba(0, 0, 0, 0.5);
-  }
-  40% {
-    border-radius: 20%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: rgba(143, 124, 1, 0.65);
-  }
-  60% {
-    border-radius: 30%;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: rgba(143, 124, 1, 0.8);
-  }
-  80% {
-    border-radius: 40%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgba(143, 124, 1, 0.9);
-    text-shadow: 0.5px 0.5px rgba(143, 143, 143, 0.7),
-      0.5px -0.5px rgba(143, 143, 143, 0.7),
-      -0.5px -0.5px rgba(143, 143, 143, 0.7),
-      -0.5px 0.5px rgba(143, 143, 143, 0.7);
-  }
-  100% {
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgba(143, 124, 1, 1);
-    text-shadow: 0.5px 0.5px rgba(143, 143, 143, 1),
-      0.5px -0.5px rgba(143, 143, 143, 1), -0.5px -0.5px rgba(143, 143, 143, 1),
-      -0.5px 0.5px rgba(143, 143, 143, 1);
-  }
 }
 
 #secret-instr
@@ -349,7 +315,6 @@ footer section {
   }
 
   form {
-    /* background-color: #8f7c01; */
     border: 0 none;
     border-radius: 10px;
     padding: 1em 1em 1em 1em;
@@ -359,11 +324,48 @@ footer section {
     transition: none;
   }
 
+  @keyframes linkHoverCab {
+    0% {
+      background-color: rgba(0, 0, 0, 1);
+    }
+    20% {
+      border-radius: 10%;
+      background-color: rgba(0, 0, 0, 0.95);
+      color: rgba(0, 0, 0, 0.5);
+    }
+    40% {
+      border-radius: 20%;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: rgba(143, 124, 1, 0.65);
+    }
+    60% {
+      border-radius: 30%;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: rgba(143, 124, 1, 0.8);
+    }
+    80% {
+      border-radius: 40%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: rgba(143, 124, 1, 0.9);
+      text-shadow: 0.5px 0.5px rgba(143, 143, 143, 0.7),
+        0.5px -0.5px rgba(143, 143, 143, 0.7),
+        -0.5px -0.5px rgba(143, 143, 143, 0.7),
+        -0.5px 0.5px rgba(143, 143, 143, 0.7);
+    }
+    100% {
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: rgba(143, 124, 1, 1);
+      text-shadow: 0.5px 0.5px rgba(143, 143, 143, 1),
+        0.5px -0.5px rgba(143, 143, 143, 1),
+        -0.5px -0.5px rgba(143, 143, 143, 1),
+        -0.5px 0.5px rgba(143, 143, 143, 1);
+    }
+  }
+
   a:hover {
     color: rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.7);
-    /* border: 0.1px black; */
-    /* border-radius: 50%; */
     font-weight: 600;
     animation-name: linkHoverCab;
     animation-duration: 10s;
