@@ -1,5 +1,5 @@
 /* The "gold" color is #8f7c01 */
-/* Text sizing rules for landscape mode ? */
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -31,7 +31,7 @@ body {
 h1 {
   font-family: "Six Caps", "Alegreya Sans SC", sans-serif;
   font-size: 40px;
-  /* padding: 0 1em; */
+  padding: 0 0.1em;
 }
 
 .main-title {
@@ -72,10 +72,12 @@ header img {
   padding-left: 6em;
   display: none;
 }
+
 #no-hover-secret {
   font-size: 70%;
   padding-left: 6em;
 }
+
 #nav-icon {
   background: #8f7c01;
   color: black;
@@ -89,17 +91,6 @@ header img {
   background-image: url("img/sectionbackgroundmonolith.png");
   background-size: cover;
   border-radius: 10px;
-}
-
-.header-links {
-  transition: color 3s, border-radius 1.5s;
-}
-
-a.header-links:hover {
-  color: rgba(143, 124, 1, 1);
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 50%;
-  font-weight: 600;
 }
 
 a:active {
@@ -284,6 +275,67 @@ footer section {
   }
 }
 
+@keyframes linkHoverCab {
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  10% {
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: rgba(0, 0, 0, 0.5);
+  }
+  20% {
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(143, 124, 1, 0.65);
+  }
+  30% {
+    border-radius: 30%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(143, 124, 1, 0.8);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.5),
+      0.5px -0.5px rgba(255, 255, 255, 0.5),
+      -0.5px -0.5px rgba(255, 255, 255, 0.5),
+      -0.5px 0.5px rgba(255, 255, 255, 0.5);
+  }
+  40% {
+    border-radius: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(143, 124, 1, 0.9);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.7),
+      0.5px -0.5px rgba(255, 255, 255, 0.7),
+      -0.5px -0.5px rgba(255, 255, 255, 0.7),
+      -0.5px 0.5px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(143, 124, 1, 1);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 1),
+      0.5px -0.5px rgba(255, 255, 255, 1), -0.5px -0.5px rgba(255, 255, 255, 1),
+      -0.5px 0.5px rgba(255, 255, 255, 1);
+  }
+  100% {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(143, 124, 1, 1);
+    text-shadow: 0.5px 0.5px rgba(255, 255, 255, 1),
+      0.5px -0.5px rgba(255, 255, 255, 1), -0.5px -0.5px rgba(255, 255, 255, 1),
+      -0.5px 0.5px rgba(255, 255, 255, 1);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-links {
+    transition: color 3s, border-radius 1.5s;
+  }
+
+  a.header-links:hover {
+    color: rgba(143, 124, 1, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    font-weight: 600;
+  }
+}
 @media only screen and (min-width: 1025px) {
   main {
     margin: 0 auto;
@@ -304,12 +356,11 @@ footer section {
   .header-nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-self: flex-end;
+    align-items: flex-end;
   }
 
   #secret-instructions {
-    display: block;
+    display: flex;
   }
   #no-hover-secret {
     display: none;
@@ -334,53 +385,14 @@ footer section {
     transition: none;
   }
 
-  @keyframes linkHoverCab {
-    0% {
-      background-color: rgba(0, 0, 0, 1);
-    }
-    20% {
-      border-radius: 10%;
-      background-color: rgba(0, 0, 0, 0.95);
-      color: rgba(0, 0, 0, 0.5);
-    }
-    40% {
-      border-radius: 20%;
-      background-color: rgba(0, 0, 0, 0.9);
-      color: rgba(143, 124, 1, 0.65);
-    }
-    60% {
-      border-radius: 30%;
-      background-color: rgba(0, 0, 0, 0.85);
-      color: rgba(143, 124, 1, 0.8);
-    }
-    80% {
-      border-radius: 40%;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: rgba(143, 124, 1, 0.9);
-      text-shadow: 0.5px 0.5px rgba(143, 143, 143, 0.7),
-        0.5px -0.5px rgba(143, 143, 143, 0.7),
-        -0.5px -0.5px rgba(143, 143, 143, 0.7),
-        -0.5px 0.5px rgba(143, 143, 143, 0.7);
-    }
-    100% {
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: rgba(143, 124, 1, 1);
-      text-shadow: 0.5px 0.5px rgba(143, 143, 143, 1),
-        0.5px -0.5px rgba(143, 143, 143, 1),
-        -0.5px -0.5px rgba(143, 143, 143, 1),
-        -0.5px 0.5px rgba(143, 143, 143, 1);
-    }
-  }
-
   a:hover {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
     font-weight: 600;
     animation-name: linkHoverCab;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier();
   }
 }
 
