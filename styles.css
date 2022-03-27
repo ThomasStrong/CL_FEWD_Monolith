@@ -230,6 +230,12 @@ footer > p {
   border-radius: 10px;
 }
 
+.header-nav li::first-letter {
+  font-family: "Six Caps", "Alegreya Sans SC", sans-serif;
+  /* font-size: 200%;   Debugging */
+  padding-right: 0.1em;
+}
+
 /* Doing a bit of experimenting/styling with the header here */
 
 .main-title {
@@ -239,9 +245,11 @@ footer > p {
 /* .main-title:first-of-type {
   padding-right: 0;
 }
+
 .main:nth-child(2) {
   padding-left: 0;
 } */
+
 #landing-title {
   display: flex;
 }
@@ -263,15 +271,16 @@ footer > p {
     width: 30%;
     max-width: 200px;
   }
+
   h1 {
     font-size: 60px;
   }
-  #header-nav {
-    display: flex;
-  }
+
+  #header-nav,
   .header-nav {
     display: flex;
   }
+
   #nav-icon {
     display: none;
   }
@@ -281,7 +290,7 @@ footer > p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
   }
 
   #hero-story img,
@@ -409,7 +418,7 @@ footer > p {
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
-    font-size: 70%;
+    font-size: 80%;
   }
 
   p {
