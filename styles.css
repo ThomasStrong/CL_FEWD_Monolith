@@ -65,6 +65,12 @@ header img {
   padding: 0.5em;
 }
 
+#secret-instructions {
+  font-size: 70%;
+  padding-left: 3em;
+  display: none;
+}
+
 #nav-icon {
   background: #8f7c01;
   color: black;
@@ -79,10 +85,14 @@ header img {
   background-size: cover;
 }
 
+a {
+  transition: color 3s, border-radius 1.5s;
+}
+
 a:hover {
-  color: #8f7c01;
+  color: rgba(143, 124, 1, 1);
   background-color: rgba(0, 0, 0, 0.7);
-  border: 0.1px black;
+  /* border: 0.1px black; */
   border-radius: 50%;
   font-weight: 600;
 }
@@ -198,6 +208,64 @@ footer section {
   margin: 0 auto;
 }
 
+@keyframes linkHoverCab {
+  0% {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  20% {
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: rgba(0, 0, 0, 0.5);
+  }
+  40% {
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(143, 124, 1, 0.65);
+  }
+  60% {
+    border-radius: 30%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(143, 124, 1, 0.8);
+  }
+  80% {
+    border-radius: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(143, 124, 1, 0.9);
+    text-shadow: 0.5px 0.5px rgba(143, 143, 143, 0.7),
+      0.5px -0.5px rgba(143, 143, 143, 0.7),
+      -0.5px -0.5px rgba(143, 143, 143, 0.7),
+      -0.5px 0.5px rgba(143, 143, 143, 0.7);
+  }
+  100% {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(143, 124, 1, 1);
+    text-shadow: 0.5px 0.5px rgba(143, 143, 143, 1),
+      0.5px -0.5px rgba(143, 143, 143, 1), -0.5px -0.5px rgba(143, 143, 143, 1),
+      -0.5px 0.5px rgba(143, 143, 143, 1);
+  }
+}
+
+#secret-instr
+
+/* Doing a bit of experimenting/styling with the header here */
+
+.main-title {
+  padding: 0 0.1em 0 0.1em;
+}
+
+/* .main-title:first-of-type {
+  padding-right: 0;
+}
+.main:nth-child(2) {
+  padding-left: 0;
+} */
+#landing-title {
+  display: flex;
+}
+
+/* Media Queries Below */
+
 @media only screen and (min-width: 768px) {
   #image-bank img {
     width: 30%;
@@ -240,24 +308,6 @@ footer section {
   }
 }
 
-/* Doing a bit of experimenting/styling with the header here */
-
-.main-title {
-  padding: 0 0.1em 0 0.1em;
-}
-
-/* .main-title:first-of-type {
-  padding-right: 0;
-}
-.main:nth-child(2) {
-  padding-left: 0;
-} */
-#landing-title {
-  display: flex;
-}
-
-/* Media Queries Below */
-
 @media only screen and (min-width: 1025px) {
   main {
     margin: 0 auto;
@@ -282,6 +332,13 @@ footer section {
     align-self: flex-end;
   }
 
+  #secret-instructions {
+    display: block;
+  }
+  #no-hover-secret {
+    display: none;
+  }
+
   #hero-story img,
   #image-gallery {
     max-width: 868px;
@@ -296,6 +353,22 @@ footer section {
     border: 0 none;
     border-radius: 10px;
     padding: 1em 1em 1em 1em;
+  }
+
+  a {
+    transition: none;
+  }
+
+  a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    /* border: 0.1px black; */
+    /* border-radius: 50%; */
+    font-weight: 600;
+    animation-name: linkHoverCab;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
   }
 }
 
