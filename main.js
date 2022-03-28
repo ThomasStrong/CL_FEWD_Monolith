@@ -66,11 +66,6 @@ function onSubmit() {
 
   // Need a .toLowerCase() for validation of strings? and email?
 
-  // then (fname == "" || lName == "") {
-  //   alert("We need your full name, please!");
-  // }
-  // Setting up if statement for validation
-
   // This does not work because always returns 'string'
   // if (typeof fName === "string") {
   //   console.log(fName + "Got this one");
@@ -78,7 +73,7 @@ function onSubmit() {
   //   console.log("no return");
   // }
 
-  // Setting up this object to record multiple contact form submissions
+  // Setting up this object to record multiple contact form submissions(?)
   //
   // let contactPerson = {
   //   firstName: fName,
@@ -92,14 +87,6 @@ function onSubmit() {
   // console.log(contactPerson.lastName);
   // console.log(contactPerson.emailContact);
   // console.log(contactPerson.value);
-
-  // alert(
-  //   "Wow, thanks for your interest, " +
-  //     fName +
-  //     "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
-  //     email +
-  //     " for more information!"
-  // );
 }
 
 function hamburgerNav() {
