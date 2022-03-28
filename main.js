@@ -43,8 +43,8 @@ let fName = document.getElementById("first-name").value;
 let lName = document.getElementById("last-name").value;
 let email = document.getElementById("email").value;
 
-const emailVerify = email.slice(-4);
-const emailDomain = email.includes("@");
+let emailVerify = email.slice(-4);
+let emailDomain = email.includes("@");
 
 function redInvalid(clickedInput) {
   let redLabel = clickedInput + "-label";
@@ -79,17 +79,23 @@ function emailValidate(emailEntered) {
 }
 
 function onSubmit() {
+  let fNameSub = document.getElementById("first-name").value;
+  let lNameSub = document.getElementById("last-name").value;
+  let emailSub = document.getElementById("email").value;
+  let emailVerifySub = emailSub.slice(-4);
+  let emailDomainSub = emailSub.includes("@");
+
   // alert("Oi!  That feature is coming soon.  Stay tuned!");
 
   // Debug line
-  // console.log(emailVerify);
+  // console.log(emailVerifySub);
 
   // Debug line
-  // console.log(typeof emailDomain);
+  // console.log(typeof emailDomainSub);
 
-  if (fName == "" && lName == "" && email == "") {
+  if (fNameSub == "" && lNameSub == "" && emailSub == "") {
     alert("We need your first and last names and a valid email, please!");
-
+    console.log(fNameSub, lNameSub, emailSub);
     // This instead of setting each to red?
     // style.innerHtml = `
     // .form-labels {
@@ -100,54 +106,43 @@ function onSubmit() {
     // document.getElementById("first-name-label").style.color = "red";
     // document.getElementById("last-name-label").style.color = "red";
     // document.getElementById("email-label").style.color = "red";
-  } else if (fName == "" || lName == "") {
+  } else if (fNameSub == "" || lNameSub == "") {
     alert("We need your full name, please!");
     // document.getElementById("first-name-label").style.color = "red";
     // document.getElementById("last-name-label").style.color = "red";
-  } else if (fName == "" && lName == "") {
+  } else if (fNameSub == "" && lNameSub == "") {
     alert("We need your first and last names, please!");
     // document.getElementById("first-name-label").style.color = "red";
     // document.getElementById("last-name-label").style.color = "red";
-  } else if (email == "") {
+  } else if (emailSub == "") {
     alert("We need an email address to correspond!");
     // document.getElementById("email-label").style.color = "red";
-  } else if (emailVerify !== ".com") {
+  } else if (emailVerifySub !== ".com") {
     alert("Your e-mail address must end in .com!");
     // document.getElementById("email-label").style.color = "red";
-  } else if (emailDomain == false) {
+  } else if (emailDomainSub == false) {
     alert("Your e-mail address needs a domain name preceded by the @ symbol!");
     // document.getElementById("email-label").style.color = "red";
   } else {
-    // Reset color to white.  Need to make this better, so check is completed when input goes unfocused after typing.
-
     document.getElementById("first-name-label").style.color = "white";
     document.getElementById("last-name-label").style.color = "white";
     document.getElementById("email-label").style.color = "white";
 
     alert(
       "Wow, thanks for your interest, " +
-        fName +
+        fNameSub +
         "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
-        email +
+        emailSub +
         " for more information!"
     );
   }
 
-  // Need a .toLowerCase() for validation of strings? and email?
-
-  // This does not work because always returns 'string'
-  // if (typeof fName === "string") {
-  //   console.log(fName + "Got this one");
-  // } else {
-  //   console.log("no return");
-  // }
-
   // Setting up this object to record multiple contact form submissions(?)
   //
   // let contactPerson = {
-  //   firstName: fName,
-  //   lastName: lName,
-  //   emailContact: email,
+  //   firstName: fNameSub,
+  //   lastName: lNameSub,
+  //   emailContact: emailSub,
   // };
 
   // Debugging value returns
