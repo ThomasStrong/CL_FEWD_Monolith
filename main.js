@@ -26,7 +26,33 @@ function carousel() {
 carousel();
 
 function onSubmit() {
-  alert("Oi!  That feature is coming soon.  Stay tuned!");
+  // alert("Oi!  That feature is coming soon.  Stay tuned!");
+  let fName = document.getElementById("first-name").value;
+  let lName = document.getElementById("last-name").value;
+  let email = document.getElementById("email").value;
+
+  // Setting up this object to record multiple contact form submissions
+  // 
+  // let contactPerson = {
+  //   firstName: fName,
+  //   lastName: lName,
+  //   emailContact: email,
+  // };
+
+  // Debugging value returns
+  // 
+  // console.log(contactPerson.firstName);
+  // console.log(contactPerson.lastName);
+  // console.log(contactPerson.emailContact);
+  // console.log(contactPerson.value);
+
+  alert(
+    "Wow, thanks for your interest, " +
+      fName +
+      "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
+      email +
+      "for more information!"
+  );
 }
 
 function hamburgerNav() {
