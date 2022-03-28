@@ -96,14 +96,13 @@ function onSubmit() {
         emailSub +
         " for more information!"
     );
+    const inputs = document.querySelectorAll(
+      "#first-name, #last-name, #email, #contact-message"
+    );
+    inputs.forEach((input) => {
+      input.value = "";
+    });
   }
-
-  const inputs = document.querySelectorAll(
-    "#first-name, #last-name, #email, #contact-message"
-  );
-  inputs.forEach((input) => {
-    input.value = "";
-  });
 }
 
 // This function sets the hamburger menu to display or hide the nav links
