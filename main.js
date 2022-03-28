@@ -32,28 +32,35 @@ function onSubmit() {
   let lName = document.getElementById("last-name").value;
   let email = document.getElementById("email").value;
 
-  const emailVerify =
-    email.charAt(email.length - 4) +
-    email.charAt(email.length - 3) +
-    email.charAt(email.length - 2) +
-    email.charAt(email.length - 1);
+  const emailVerify = email.slice(-4);
 
-  // console.log(emailVerify);  Debug line
+  // Debug line
+  // console.log(emailVerify);
 
   const emailDomain = email.includes("@");
 
-  // console.log(typeof emailDomain);  Debug Line
+  // Debug line
+  // console.log(typeof emailDomain);
 
   if (fName == "" && lName == "" && email == "") {
     alert("We need your first and last names and a valid email, please!");
+    document.getElementById("first-name-label").style.color = "red";
+    document.getElementById("last-name-label").style.color = "red";
+    document.getElementById("email-label").style.color = "red";
   } else if (fName == "" && lName == "") {
     alert("We need your first and last names, please!");
+    document.getElementById("first-name-label").style.color = "red";
+    document.getElementById("last-name-label").style.color = "red";
   } else if (fName == "" || lName == "") {
     alert("We need your full name, please!");
+    document.getElementById("first-name-label").style.color = "red";
+    document.getElementById("last-name-label").style.color = "red";
   } else if (emailVerify !== ".com") {
     alert("Your e-mail address must end in .com!");
+    document.getElementById("email-label").style.color = "red";
   } else if (emailDomain == false) {
     alert("Your e-mail address needs a domain name preceded by the @ symbol!");
+    document.getElementById("email-label").style.color = "red";
   } else {
     alert(
       "Wow, thanks for your interest, " +
@@ -62,6 +69,12 @@ function onSubmit() {
         email +
         " for more information!"
     );
+
+    // Reset color to white.  Need to make this better, so check is completed while typing.
+
+    document.getElementById("first-name-label").style.color = "white";
+    document.getElementById("last-name-label").style.color = "white";
+    document.getElementById("email-label").style.color = "white";
   }
 
   // Need a .toLowerCase() for validation of strings? and email?
