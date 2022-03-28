@@ -79,13 +79,13 @@ function emailValidate(emailEntered) {
 }
 
 function onSubmit() {
+  // alert("Oi!  That feature is coming soon.  Stay tuned!");
+
   let fNameSub = document.getElementById("first-name").value;
   let lNameSub = document.getElementById("last-name").value;
   let emailSub = document.getElementById("email").value;
   let emailVerifySub = emailSub.slice(-4);
   let emailDomainSub = emailSub.includes("@");
-
-  // alert("Oi!  That feature is coming soon.  Stay tuned!");
 
   // Debug line
   // console.log(emailVerifySub);
@@ -137,6 +137,14 @@ function onSubmit() {
     );
   }
 
+  const inputs = document.querySelectorAll("#first-name, #last-name, #email");
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+
+  // document.getElementById("first-name-label").style.color = "white";
+  // document.getElementById("last-name-label").style.color = "white";
+  // document.getElementById("email-label").style.color = "white";
   // Setting up this object to record multiple contact form submissions(?)
   //
   // let contactPerson = {
