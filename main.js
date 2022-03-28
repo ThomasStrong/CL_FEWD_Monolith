@@ -39,37 +39,50 @@ carousel();
 //   .addEventListener("focusout", redInvalid());
 // document.getElementById("contact-form").addEventListener("click", onSubmit());
 
-// function redInvalid(clickedInput) {
-//   let redLabel = clickedInput + "-label";
-//   // console.log(typeof redLabel);
+let fName = document.getElementById("first-name").value;
+let lName = document.getElementById("last-name").value;
+let email = document.getElementById("email").value;
 
-//   console.log(clickedInput + "-label");
-//   // document.getElementById(redLabel).style.color = "red";
+const emailVerify = email.slice(-4);
+const emailDomain = email.includes("@");
 
-//   let inputArea = document.getElementById(clickedInput).value;
+function redInvalid(clickedInput) {
+  let redLabel = clickedInput + "-label";
 
-//   if (inputArea == "") {
-//     document.getElementById(redLabel).style.color = "red";
-//     console.log("true");
-//   } else {
-//     document.getElementById(clickedInput + "-label").style.color = "white";
-//     console.log("false");
-//   }
-// }
+  // console.log(typeof redLabel);
+  // console.log(clickedInput + "-label");
+
+  let inputArea = document.getElementById(clickedInput).value;
+
+  if (inputArea == "") {
+    document.getElementById(redLabel).style.color = "red";
+    // console.log("true");
+  } else {
+    document.getElementById(clickedInput + "-label").style.color = "white";
+    // console.log("false");
+  }
+}
+
+function emailValidate(emailEntered) {
+  let emailVal = emailEntered.slice(-4);
+  const emailDom = emailEntered.includes("@");
+
+  if (emailEntered == "") {
+    document.getElementById("email-label").style.color = "red";
+  } else if (emailVal !== ".com") {
+    document.getElementById("email-label").style.color = "red";
+  } else if (emailDom == false) {
+    document.getElementById("email-label").style.color = "red";
+  } else {
+    document.getElementById("email-label").style.color = "white";
+  }
+}
 
 function onSubmit() {
   // alert("Oi!  That feature is coming soon.  Stay tuned!");
 
-  let fName = document.getElementById("first-name").value;
-  let lName = document.getElementById("last-name").value;
-  let email = document.getElementById("email").value;
-
-  const emailVerify = email.slice(-4);
-
   // Debug line
   // console.log(emailVerify);
-
-  const emailDomain = email.includes("@");
 
   // Debug line
   // console.log(typeof emailDomain);
@@ -84,28 +97,27 @@ function onSubmit() {
     // }
     // `;
 
-    document.getElementById("first-name-label").style.color = "red";
-    document.getElementById("last-name-label").style.color = "red";
-    document.getElementById("email-label").style.color = "red";
+    // document.getElementById("first-name-label").style.color = "red";
+    // document.getElementById("last-name-label").style.color = "red";
+    // document.getElementById("email-label").style.color = "red";
   } else if (fName == "" || lName == "") {
     alert("We need your full name, please!");
-    document.getElementById("first-name-label").style.color = "red";
-    document.getElementById("last-name-label").style.color = "red";
+    // document.getElementById("first-name-label").style.color = "red";
+    // document.getElementById("last-name-label").style.color = "red";
   } else if (fName == "" && lName == "") {
     alert("We need your first and last names, please!");
-    document.getElementById("first-name-label").style.color = "red";
-    document.getElementById("last-name-label").style.color = "red";
+    // document.getElementById("first-name-label").style.color = "red";
+    // document.getElementById("last-name-label").style.color = "red";
   } else if (email == "") {
     alert("We need an email address to correspond!");
-    document.getElementById("email-label").style.color = "red";
+    // document.getElementById("email-label").style.color = "red";
   } else if (emailVerify !== ".com") {
     alert("Your e-mail address must end in .com!");
-    document.getElementById("email-label").style.color = "red";
+    // document.getElementById("email-label").style.color = "red";
   } else if (emailDomain == false) {
     alert("Your e-mail address needs a domain name preceded by the @ symbol!");
-    document.getElementById("email-label").style.color = "red";
+    // document.getElementById("email-label").style.color = "red";
   } else {
-
     // Reset color to white.  Need to make this better, so check is completed when input goes unfocused after typing.
 
     document.getElementById("first-name-label").style.color = "white";
@@ -119,9 +131,7 @@ function onSubmit() {
         email +
         " for more information!"
     );
-
   }
-
 
   // Need a .toLowerCase() for validation of strings? and email?
 

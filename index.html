@@ -198,18 +198,18 @@
 
       <!-- This is needed to use the validating/styling function, onclick="redInvalid(this.id)" or onfocusin="redInvalid(this.id)"-->
 
-      <form id="contact-form">
+      <form id="contact-form" onfocus="redInvalid()">
         <div>
           <label for="first-name" id="first-name-label" class="form-labels">First Name</label><br />
-          <input type="text" id="first-name" name="first-name" required /><br />
+          <input type="text" id="first-name" name="first-name" onfocus="redInvalid(this.id)" onkeyup="redInvalid(this.id)" required /><br />
         </div>
         <div>
           <label for="last-name" id="last-name-label" class="form-labels">Last Name</label><br />
-          <input type="text" id="last-name" name="last-name" required /><br />
+          <input type="text" id="last-name" name="last-name" onfocus="redInvalid(this.id)" onkeyup="redInvalid(this.id)" required /><br />
         </div>
         <div>
           <label for="email" id="email-label" class="form-labels">Email</label><br />
-          <input type="email" id="email" name="email" required /><br />
+          <input type="email" id="email" name="email" onfocus="emailValidate(this.value)" onkeyup="emailValidate(this.value)" required /><br />
         </div>
         <div>
           <label for="contact-message">Comments</label><br />
