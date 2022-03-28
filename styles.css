@@ -293,6 +293,16 @@ footer > p {
     padding: 1em;
   }
 
+  /* This works for valid/invalid styling on the input areas only, not labels
+  
+  input:valid {
+    background-color: white;
+  }
+
+  input:invalid {
+    background-color: rgb(206, 129, 129);
+  } */
+
   #hero-story img,
   #image-gallery {
     max-width: 591px;

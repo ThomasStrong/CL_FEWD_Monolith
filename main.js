@@ -25,6 +25,38 @@ function carousel() {
 
 carousel();
 
+// Trying to get input areas to change back to white when the field is valid
+// let fNameInput = document.getElementById("first-name");
+// let lNameInput = document.getElementById("last-name");
+// let emailInput = document.getElementById("email");
+
+// fNameInput.addEventListener("focusout", redInvalid());
+// lNameInput.addEventListener("focusout", redInvalid());
+// emailInput.addEventListener("focusout", redInvalid());
+
+// document
+//   .getElementById("first-name")
+//   .addEventListener("focusout", redInvalid());
+// document.getElementById("contact-form").addEventListener("click", onSubmit());
+
+// function redInvalid(clickedInput) {
+//   let redLabel = clickedInput + "-label";
+//   // console.log(typeof redLabel);
+
+//   console.log(clickedInput + "-label");
+//   // document.getElementById(redLabel).style.color = "red";
+
+//   let inputArea = document.getElementById(clickedInput).value;
+
+//   if (inputArea == "") {
+//     document.getElementById(redLabel).style.color = "red";
+//     console.log("true");
+//   } else {
+//     document.getElementById(clickedInput + "-label").style.color = "white";
+//     console.log("false");
+//   }
+// }
+
 function onSubmit() {
   // alert("Oi!  That feature is coming soon.  Stay tuned!");
 
@@ -44,15 +76,24 @@ function onSubmit() {
 
   if (fName == "" && lName == "" && email == "") {
     alert("We need your first and last names and a valid email, please!");
+
+    // This instead of setting each to red?
+    // style.innerHtml = `
+    // .form-labels {
+    //   color: red;
+    // }
+    // `;
+
+    document.getElementById("first-name-label").style.color = "red";
+    document.getElementById("last-name-label").style.color = "red";
+    document.getElementById("email-label").style.color = "red";
+  } else if (fName == "" || lName == "" || email == "") {
+    alert("We need your full name and email, please!");
     document.getElementById("first-name-label").style.color = "red";
     document.getElementById("last-name-label").style.color = "red";
     document.getElementById("email-label").style.color = "red";
   } else if (fName == "" && lName == "") {
     alert("We need your first and last names, please!");
-    document.getElementById("first-name-label").style.color = "red";
-    document.getElementById("last-name-label").style.color = "red";
-  } else if (fName == "" || lName == "") {
-    alert("We need your full name, please!");
     document.getElementById("first-name-label").style.color = "red";
     document.getElementById("last-name-label").style.color = "red";
   } else if (emailVerify !== ".com") {
@@ -70,11 +111,11 @@ function onSubmit() {
         " for more information!"
     );
 
-    // Reset color to white.  Need to make this better, so check is completed while typing.
+    // Reset color to white.  Need to make this better, so check is completed when input goes unfocused after typing.
 
-    document.getElementById("first-name-label").style.color = "white";
-    document.getElementById("last-name-label").style.color = "white";
-    document.getElementById("email-label").style.color = "white";
+    // document.getElementById("first-name-label").style.color = "white";
+    // document.getElementById("last-name-label").style.color = "white";
+    // document.getElementById("email-label").style.color = "white";
   }
 
   // Need a .toLowerCase() for validation of strings? and email?
