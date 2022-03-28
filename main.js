@@ -25,20 +25,6 @@ function carousel() {
 
 carousel();
 
-// Trying to get input areas to change back to white when the field is valid
-// let fNameInput = document.getElementById("first-name");
-// let lNameInput = document.getElementById("last-name");
-// let emailInput = document.getElementById("email");
-
-// fNameInput.addEventListener("focusout", redInvalid());
-// lNameInput.addEventListener("focusout", redInvalid());
-// emailInput.addEventListener("focusout", redInvalid());
-
-// document
-//   .getElementById("first-name")
-//   .addEventListener("focusout", redInvalid());
-// document.getElementById("contact-form").addEventListener("click", onSubmit());
-
 let fName = document.getElementById("first-name").value;
 let lName = document.getElementById("last-name").value;
 let email = document.getElementById("email").value;
@@ -49,17 +35,12 @@ let emailDomain = email.includes("@");
 function redInvalid(clickedInput) {
   let redLabel = clickedInput + "-label";
 
-  // console.log(typeof redLabel);
-  // console.log(clickedInput + "-label");
-
   let inputArea = document.getElementById(clickedInput).value;
 
   if (inputArea == "") {
     document.getElementById(redLabel).style.color = "red";
-    // console.log("true");
   } else {
     document.getElementById(clickedInput + "-label").style.color = "white";
-    // console.log("false");
   }
 }
 
@@ -79,7 +60,6 @@ function emailValidate(emailEntered) {
 }
 
 function onSubmit() {
-  // alert("Oi!  That feature is coming soon.  Stay tuned!");
 
   let fNameSub = document.getElementById("first-name").value;
   let lNameSub = document.getElementById("last-name").value;
@@ -87,25 +67,21 @@ function onSubmit() {
   let emailVerifySub = emailSub.slice(-4);
   let emailDomainSub = emailSub.includes("@");
 
-  // Debug line
-  // console.log(emailVerifySub);
-
-  // Debug line
-  // console.log(typeof emailDomainSub);
-
   if (fNameSub == "" && lNameSub == "" && emailSub == "") {
     alert("We need your first and last names and a valid email, please!");
     console.log(fNameSub, lNameSub, emailSub);
-    // This instead of setting each to red?
-    // style.innerHtml = `
-    // .form-labels {
-    //   color: red;
-    // }
-    // `;
+
+
+    style.innerHtml = `
+    .form-labels {
+      color: red;
+    }
+    `;
 
     // document.getElementById("first-name-label").style.color = "red";
     // document.getElementById("last-name-label").style.color = "red";
     // document.getElementById("email-label").style.color = "red";
+
   } else if (fNameSub == "" || lNameSub == "") {
     alert("We need your full name, please!");
     // document.getElementById("first-name-label").style.color = "red";
@@ -144,9 +120,6 @@ function onSubmit() {
     input.value = "";
   });
 
-  // document.getElementById("first-name-label").style.color = "white";
-  // document.getElementById("last-name-label").style.color = "white";
-  // document.getElementById("email-label").style.color = "white";
   // Setting up this object to record multiple contact form submissions(?)
   //
   // let contactPerson = {
