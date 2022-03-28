@@ -137,7 +137,9 @@ function onSubmit() {
     );
   }
 
-  const inputs = document.querySelectorAll("#first-name, #last-name, #email");
+  const inputs = document.querySelectorAll(
+    "#first-name, #last-name, #email, #contact-message"
+  );
   inputs.forEach((input) => {
     input.value = "";
   });
