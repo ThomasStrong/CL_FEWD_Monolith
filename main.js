@@ -27,12 +27,59 @@ carousel();
 
 function onSubmit() {
   // alert("Oi!  That feature is coming soon.  Stay tuned!");
+
   let fName = document.getElementById("first-name").value;
   let lName = document.getElementById("last-name").value;
   let email = document.getElementById("email").value;
 
+  const emailVerify =
+    email.charAt(email.length - 4) +
+    email.charAt(email.length - 3) +
+    email.charAt(email.length - 2) +
+    email.charAt(email.length - 1);
+
+  // console.log(emailVerify);  Debug line
+
+  const emailDomain = email.includes("@");
+
+  // console.log(typeof emailDomain);  Debug Line
+
+  if (fName == "" && lName == "" && email == "") {
+    alert("We need your first and last names and a valid email, please!");
+  } else if (fName == "" && lName == "") {
+    alert("We need your first and last names, please!");
+  } else if (fName == "" || lName == "") {
+    alert("We need your full name, please!");
+  } else if (emailVerify !== ".com") {
+    alert("Your e-mail address must end in .com!");
+  } else if (emailDomain == false) {
+    alert("Your e-mail address needs a domain name preceded by the @ symbol!");
+  } else {
+    alert(
+      "Wow, thanks for your interest, " +
+        fName +
+        "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
+        email +
+        " for more information!"
+    );
+  }
+
+  // Need a .toLowerCase() for validation of strings? and email?
+
+  // then (fname == "" || lName == "") {
+  //   alert("We need your full name, please!");
+  // }
+  // Setting up if statement for validation
+
+  // This does not work because always returns 'string'
+  // if (typeof fName === "string") {
+  //   console.log(fName + "Got this one");
+  // } else {
+  //   console.log("no return");
+  // }
+
   // Setting up this object to record multiple contact form submissions
-  // 
+  //
   // let contactPerson = {
   //   firstName: fName,
   //   lastName: lName,
@@ -40,19 +87,19 @@ function onSubmit() {
   // };
 
   // Debugging value returns
-  // 
+  //
   // console.log(contactPerson.firstName);
   // console.log(contactPerson.lastName);
   // console.log(contactPerson.emailContact);
   // console.log(contactPerson.value);
 
-  alert(
-    "Wow, thanks for your interest, " +
-      fName +
-      "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
-      email +
-      "for more information!"
-  );
+  // alert(
+  //   "Wow, thanks for your interest, " +
+  //     fName +
+  //     "!  We will be reaching out to you in the next 48 hours.  Please keep a weathered eye on " +
+  //     email +
+  //     " for more information!"
+  // );
 }
 
 function hamburgerNav() {
