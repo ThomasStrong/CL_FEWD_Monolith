@@ -87,15 +87,17 @@ function onSubmit() {
     document.getElementById("first-name-label").style.color = "red";
     document.getElementById("last-name-label").style.color = "red";
     document.getElementById("email-label").style.color = "red";
-  } else if (fName == "" || lName == "" || email == "") {
-    alert("We need your full name and email, please!");
+  } else if (fName == "" || lName == "") {
+    alert("We need your full name, please!");
     document.getElementById("first-name-label").style.color = "red";
     document.getElementById("last-name-label").style.color = "red";
-    document.getElementById("email-label").style.color = "red";
   } else if (fName == "" && lName == "") {
     alert("We need your first and last names, please!");
     document.getElementById("first-name-label").style.color = "red";
     document.getElementById("last-name-label").style.color = "red";
+  } else if (email == "") {
+    alert("We need an email address to correspond!");
+    document.getElementById("email-label").style.color = "red";
   } else if (emailVerify !== ".com") {
     alert("Your e-mail address must end in .com!");
     document.getElementById("email-label").style.color = "red";
@@ -103,6 +105,13 @@ function onSubmit() {
     alert("Your e-mail address needs a domain name preceded by the @ symbol!");
     document.getElementById("email-label").style.color = "red";
   } else {
+
+    // Reset color to white.  Need to make this better, so check is completed when input goes unfocused after typing.
+
+    document.getElementById("first-name-label").style.color = "white";
+    document.getElementById("last-name-label").style.color = "white";
+    document.getElementById("email-label").style.color = "white";
+
     alert(
       "Wow, thanks for your interest, " +
         fName +
@@ -111,12 +120,8 @@ function onSubmit() {
         " for more information!"
     );
 
-    // Reset color to white.  Need to make this better, so check is completed when input goes unfocused after typing.
-
-    // document.getElementById("first-name-label").style.color = "white";
-    // document.getElementById("last-name-label").style.color = "white";
-    // document.getElementById("email-label").style.color = "white";
   }
+
 
   // Need a .toLowerCase() for validation of strings? and email?
 
