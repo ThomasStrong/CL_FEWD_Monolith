@@ -71,6 +71,9 @@ function onSubmit() {
   let emailSub = document.getElementById("email").value;
   let emailVerifySub = emailSub.slice(-4);
   let emailDomainSub = emailSub.includes("@");
+  const inputs = document.querySelectorAll(
+    "#first-name, #last-name, #email, #contact-message"
+  );
 
   if (fNameSub == "" && lNameSub == "" && emailSub == "") {
     alert("We need your first and last names and a valid email, please!");
@@ -96,9 +99,7 @@ function onSubmit() {
         emailSub +
         " for more information!"
     );
-    const inputs = document.querySelectorAll(
-      "#first-name, #last-name, #email, #contact-message"
-    );
+
     inputs.forEach((input) => {
       input.value = "";
     });
