@@ -181,6 +181,8 @@ form {
   border-radius: 10px;
   font-weight: 600;
   background-image: url("img\\thinsectionbackground.webp");
+  /* Image used under Public License and unmodified; original: 
+  Julien Leuthold (ETH Zürich, Switzerland) (https://imaggeo.egu.eu/user/Julien.Leuthold/) */
   color: white;
   text-shadow: 2px 2px 4px black, 2px -2px 4px black, -2px -2px 4px black,
     -2px 2px 4px black;
