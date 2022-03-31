@@ -233,23 +233,12 @@ footer > p {
 
 .header-nav li::first-letter {
   font-family: "Six Caps", "Alegreya Sans SC", sans-serif;
-  /* font-size: 200%;   Debugging */
   padding-right: 0.1em;
 }
-
-/* Doing a bit of experimenting/styling with the header here */
 
 .main-title {
   padding: 0 0.1em 0 0.1em;
 }
-
-/* .main-title:first-of-type {
-  padding-right: 0;
-}
-
-.main:nth-child(2) {
-  padding-left: 0;
-} */
 
 #landing-title {
   display: flex;
@@ -293,16 +282,6 @@ footer > p {
     flex-flow: row wrap;
     padding: 1em;
   }
-
-  /* This works for valid/invalid styling on the input areas only, not labels
-  
-  input:valid {
-    background-color: white;
-  }
-
-  input:invalid {
-    background-color: rgb(206, 129, 129);
-  } */
 
   #hero-story img,
   #image-gallery {
@@ -462,6 +441,6 @@ footer > p {
     animation-name: linkHoverCab;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier();
+    animation-timing-function: linear;
   }
 }
