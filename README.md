@@ -1,4 +1,7 @@
+<img align="center" src="img\favicon-32x32.webp" alt="Monolith Lapidary icon">
 # Monolith_Lapidary
+
+<img align="center" src="img\monolithmainlogo.webp" height="100px" alt="Monolith Lapidary">
 
 Project Repository for Code Louisville Front End Web Development - Monolith Lapidary
 
