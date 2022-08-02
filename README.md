@@ -27,9 +27,9 @@ Project Repository for Code Louisville Front End Web Development - Monolith Lapi
 ## Visual Example
 
 - Mobile
-  <img align="center" src="img\monolithlandingss_dtop.png">
-- Desktop
   <img align="center" src="img\monolithlandingss_mobile.png">
+- Desktop
+  <img align="center" src="img\monolithlandingss_dtop.png">
 
 Live URL: https://thomasstrong.github.io/Monolith_Lapidary/
 
