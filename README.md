@@ -1,5 +1,4 @@
-<img align="center" src="img\favicon-32x32.webp" alt="Monolith Lapidary icon">
-# Monolith_Lapidary
+# Monolith_Lapidary <img align="center" src="img\favicon-32x32.webp" alt="Monolith Lapidary icon">
 
 <img align="center" src="img\monolithmainlogo.webp" height="100px" alt="Monolith Lapidary">
 
