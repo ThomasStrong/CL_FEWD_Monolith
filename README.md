@@ -9,7 +9,7 @@ Project Repository for Code Louisville Front End Web Development - Monolith Lapi
 ## Table of Contents
 
 - [Overview](#overview)
-- [Visual Example and Delpoyed Appication](#visual-example)
+- [Visual Example and Deployed Appication](#visual-example)
 - [Instructions](#instructions)
 - [CSS Features](#css-features)
 - [JavaScript Features](#javascript-features)
