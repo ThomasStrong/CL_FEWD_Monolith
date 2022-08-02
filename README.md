@@ -1,16 +1,41 @@
 # Monolith_Lapidary <img align="center" src="img\favicon-32x32.webp" alt="Monolith Lapidary icon">
 
-<img align="center" src="img\monolithmainlogo.webp" height="100px" alt="Monolith Lapidary">
+<img align="center" src="img\monolithmainlogo.webp" height="150px" alt="Monolith Lapidary">
+
+## Description
 
 Project Repository for Code Louisville Front End Web Development - Monolith Lapidary
 
-### [Hosted on GitHub Pages](https://thomasstrong.github.io/Monolith_Lapidary/)
+## Table of Contents
 
-## Description -
+- [Overview](#overview)
+- [Visual Example and Delpoyed Appication](#visual-example)
+- [Instructions](#instructions)
+- [CSS Features](#css-features)
+- [JavaScript Features](#javascript-features)
+- [Technologies](#technologies)
+- [Future Development](#future-development)
+- [Questions](#questions)
+- [Contributions](#contributions)
+
+## Overview -
 
 - Monolith Lapidary Landing Page - This project is creating a product/service landing page for Monolith Lapidary, an imaginary business that cuts and shapes gemstones for use in jewelry and other applications. The goal is to provide a clean, succinct site for the business that allows users/guests to sample a few stones, read testimonials from happy customers, and to offer different lapidary products and services as provided by the business.
   The site is a single page, with JavaScript functions created to hide certain sections, or "pages". The author does, in fact, have a lapidary hobby that will be reflected in the use of personal images in the product gallery. The site continues to be modified as necessary for user experience.
   <br></br>
+
+## Visual Example
+
+- Mobile
+  <img align="center" src="img\monolithlandingss_dtop.png">
+- Desktop
+  <img align="center" src="img\monolithlandingss_mobile.png">
+
+Live URL: https://thomasstrong.github.io/Monolith_Lapidary/
+
+## Instructions
+
+The app is hosted at [GitHub Pages](https://thomasstrong.github.io/Monolith_Lapidary/) or, will need to be run locally via development server.
 
 ## CSS Features -
 
@@ -35,9 +60,28 @@ Project Repository for Code Louisville Front End Web Development - Monolith Lapi
   - The contact form also uses the function `redInvalid()` to set the labels of invalid form inputs to red. A similar function, `emailValidate()` validates the email address by checking for the '@' symbol, as well as ending in '.com'. This will need to be updated to accept email adresses in '.net' format, etc.
     <br></br>
 
+## Technologies
+
+- JavaScript
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="5%" />
+- CSS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="5%" />
+- HTML
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="5%" />
+
+## Future Development
+
+```
+- Continue adding up-to-date pictures
+- Add shopping cart
+- Have carousel images reflected in gallery via highlight
+```
+
 ## Questions?
 
 If you have any questions or concerns feel free to reach out to me at [Github](https://github.com/ThomasStrong) or through email at <strng_thms@yahoo.com>.
 <br></br>
 
-## Stay tuned! More and better things coming!
+## Contributions
+
+This project does not currently seek any contributions but, you are welcome to fork the repository.
