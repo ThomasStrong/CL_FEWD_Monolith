@@ -68,6 +68,8 @@ The app is hosted at [GitHub Pages](https://thomasstrong.github.io/Monolith_Lapi
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="5%" />
 - HTML
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="5%" />
+- GIMP
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" alt="HTML" width="5%" />
 
 ## Future Development
 
